@@ -42,3 +42,12 @@ for (let i = 0; i < alumns.length; i++) {
 // script.js:36 Juan Miranda ha aprobado: true
 // script.js:36 Alfredo Blanco ha aprobado: false
 // script.js:36 Raquel Benito ha aprobado: true
+
+//#3: Probando For...of
+
+const placesToTravel = ["Japon", "Venecia", "Murcia", "Santander", "Filipinas", "Madagascar"];
+
+for (let value of placesToTravel) {
+  value += 1;
+  console.log(value);
+}
