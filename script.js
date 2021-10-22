@@ -51,3 +51,21 @@ for (let value of placesToTravel) {
   value += 1;
   console.log(value);
 }
+
+// #4: Probando For...in
+
+const alien = {
+  name: "Wormuck",
+  race: "Cucusumusu",
+  planet: "Eden",
+  weight: "259kg",
+};
+
+for (let i in alien) {
+  console.log(`${i}: ${alien[i]}`);
+}
+// Devuelve:
+// name: Wormuck
+// script.js:65 race: Cucusumusu
+// script.js:65 planet: Eden
+// script.js:65 weight: 259kg
