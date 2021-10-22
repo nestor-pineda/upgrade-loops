@@ -69,3 +69,24 @@ for (let i in alien) {
 // script.js:65 race: Cucusumusu
 // script.js:65 planet: Eden
 // script.js:65 weight: 259kg
+
+// #5: Probando For
+
+const placesTraveling = [
+  { id: 5, name: "Japan" },
+  { id: 11, name: "Venecia" },
+  { id: 23, name: "Murcia" },
+  { id: 40, name: "Santander" },
+  { id: 44, name: "Filipinas" },
+  { id: 59, name: "Madagascar" },
+];
+
+//loop back-words through array when removing items like so:
+for (let i = placesTraveling.length - 1; i >= 0; i--) {
+  if (placesTraveling[i].id === 11 || placesTraveling[i].id === 40) {
+    delete placesTraveling[i];
+  }
+}
+
+console.log(placesTraveling);
+//colors is now Â ["red", "yellow"]
