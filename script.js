@@ -71,6 +71,7 @@ for (let i in alien) {
 // script.js:65 weight: 259kg
 
 // #5: Probando For
+//Usa un bucle for para recorrer todos los destinos del array y elimina los elementos que tengan el id 11 y 40. Imprime en un console log el array.
 
 const placesTraveling = [
   { id: 5, name: "Japan" },
@@ -81,7 +82,6 @@ const placesTraveling = [
   { id: 59, name: "Madagascar" },
 ];
 
-//loop back-words through array when removing items like so:
 for (let i = placesTraveling.length - 1; i >= 0; i--) {
   if (placesTraveling[i].id === 11 || placesTraveling[i].id === 40) {
     delete placesTraveling[i];
@@ -89,4 +89,21 @@ for (let i = placesTraveling.length - 1; i >= 0; i--) {
 }
 
 console.log(placesTraveling);
-//colors is now Â ["red", "yellow"]
+
+// #6: Mixed For...of e includes
+// Usa un bucle for...of para recorrer todos los juguetes y elimina los que incluyan la palabra gato. Recuerda que puedes usar la función .includes() para comprobarlo.
+
+const toys = [
+  { id: 5, name: "Buzz MyYear" },
+  { id: 11, name: "Action Woman" },
+  { id: 23, name: "Barbie Man" },
+  { id: 40, name: "El gato con Guantes" },
+  { id: 40, name: "El gato felix" },
+];
+
+for (let i = 0; i < toys.length; i++) {
+  if (toys[i].name.includes("gato")) {
+    toys.splice(i, 2);
+  }
+}
+console.log(toys);
